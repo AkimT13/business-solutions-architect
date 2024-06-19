@@ -1,15 +1,23 @@
 'use client'
 import Image from "next/image";
 import CompanySelect from "../components/companySelect/CompanySelect";
-import Input from "@/components/Input/Input";
+import Textfield from "@/components/textfield/Textfield";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col w-full items-center p-3 md:p-24 bg-gradient-to-r from-slate-500 to-slate-800 gap-3">
-      <p className=" text-center  text-wrap text-md md:text-6xl text-blue-300 font-bold">Business Solutions Architect</p>
-      <CompanySelect/>
+    <main className="flex h-screen flex-col w-full  gap-3">
+      <div>
+        <Navbar/>
+      </div>
+      <div className="flex justify-center">
+         <Textfield/>
+      </div>
+     
       
-      <Input/>
+   
+      
+    
     </main>
   );
 }
